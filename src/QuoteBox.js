@@ -111,9 +111,7 @@ export default class QuoteBox extends React.Component {
                 </p>
     
                 <div className="buttons">
-                    <a
-                        className="button"
-                        id="tweet-quote"
+                    <a  id="tweet-quote"
                         title="Tweet this quote!"
                         target="_blank"
                         rel="noopener noreferrer"

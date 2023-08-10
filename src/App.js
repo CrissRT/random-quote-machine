@@ -27,46 +27,45 @@ class App extends React.Component {
   }
   
 
-    render() {
-      return (
-          <div className="App" style={{ backgroundColor: this.state.backgroundColor }}>
-              <header>
-                <h1 className='h1 text-center mb-5'>Random Quote Machine</h1>
-              </header>
+  render() {
+    return (
+        <div className="App" style={{ backgroundColor: this.state.backgroundColor }}>
+            <header>
+              <h1 className='h1 text-center mb-5'>Random Quote Machine</h1>
+            </header>
 
-              <div id='main-content'>
-                <QuoteBox changeColor={this.changeColor} backgroundColor={this.state.backgroundColor}/>
+            <div id='main-content'>
+              <QuoteBox changeColor={this.changeColor} backgroundColor={this.state.backgroundColor}/>
+            </div>
+
+            <footer className='mt-3 text-dark container'>
+            <div className='row'>
+              <div className="col text-center">
+                <p id='project-author'>Made by RTCriss</p>
               </div>
+            </div>
 
-              <footer className='mt-3 text-dark container'>
-              <div className='row'>
-                <div class="col text-center">
-                  <p id='project-author'>Made by RTCriss</p>
-                </div>
+            <div className='row'>
+              <div className="col text-center">
+              <a
+                  className="button"
+                  id="github-button"
+                  title="Author Github"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href='https://github.com/CrissRT'
+                  style={{color: "black"}}
+                >
+                  <i className="bi bi-github" />
+                </a>
               </div>
+            </div>
+                
 
-              <div className='row'>
-                <div class="col text-center">
-                <a
-                    className="button"
-                    id="github-button"
-                    title="Author Github"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href='https://github.com/CrissRT'
-                    style={{color: "black"}}
-                  >
-                    <i class="bi bi-github" />
-                  </a>
-                </div>
-              </div>
-                  
-
-              </footer>
-          </div>
-      );
-  }
-  
+            </footer>
+        </div>
+    );
+  } 
 }
 
 export default App;
